@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité — StudyTrack</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="icon.png" alt="">
+    <a href="/">StudyTrack</a>
+    <nav><a href="#en">English</a><a href="terms.html">Conditions</a></nav>
+  </header>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="muted">Dernière mise à jour : 2 octobre 2026</p>
+
+  <p>StudyTrack est conçu pour garder tes données chez toi. Cette page dit exactement ce que l'app lit, où elle le garde, et ce qui quitte ton téléphone.</p>
+
+  <h2>Ce qui reste sur ton téléphone</h2>
+  <p>Tes cours, leur théorie, tes séries et leur avancement, ton temps d'étude, tes notes et ton agenda sont stockés <strong>uniquement sur ton appareil</strong> (et dans ta sauvegarde iCloud si tu l'as activée). Les identifiants de tes connexions (Moodle, services de tâches) sont gardés dans le trousseau iOS.</p>
+
+  <h2>Ce que l'app lit</h2>
+  <ul>
+    <li><strong>Moodle, Courseware, MediaSpace, Explique (EPFL)</strong> : l'app lit les pages de tes cours dans ta propre session, comme tu le ferais dans un navigateur, pour en extraire la structure (semaines, vidéos, séries, échéances). Ton mot de passe EPFL est saisi sur la page de l'EPFL et ne passe jamais par l'app.</li>
+    <li><strong>Calendrier et Rappels d'iOS</strong> : seulement si tu l'autorises, pour afficher ton horaire et tes tâches et y ajouter tes sessions.</li>
+    <li><strong>Services de tâches</strong> (Google Tasks, Todoist, TickTick, Notion) : seulement si tu les relies, pour afficher tes tâches et en créer pour tes sessions d'étude.</li>
+  </ul>
+
+  <h2>Ce qui quitte ton téléphone</h2>
+  <ul>
+    <li><strong>Lecture des séries et des cours</strong> : le texte (et, si nécessaire, les images) d'une série d'exercices ou le plan d'un cours peut être envoyé à notre serveur (Supabase, Union européenne) qui le transmet à un modèle de langue pour le ranger. Rien n'est conservé après la réponse.</li>
+    <li><strong>Groupes</strong> (facultatif, avec un compte StudyTrack) : ce que tu choisis de partager — temps d'étude agrégé par jour, avancement des séries, présence « je travaille sur… » — est visible par les membres de tes groupes. Les messages d'entraide sont <strong>chiffrés de bout en bout</strong> : le serveur ne peut pas les lire.</li>
+    <li><strong>Assistant</strong> (facultatif, si tu l'actives) : un résumé de tes cours et de ton avancement est déposé sur notre serveur pour que ton assistant IA (via MCP) puisse le lire. Il ne contient ni tes tâches ni tes messages.</li>
+    <li><strong>Connexion OAuth</strong> à Todoist, TickTick ou Notion : le code d'autorisation transite par notre serveur, qui l'échange contre un jeton et le renvoie immédiatement à l'app, sans le conserver.</li>
+  </ul>
+  <p>Aucune publicité, aucun traceur, aucune revente de données.</p>
+
+  <h2>Données des services Google</h2>
+  <p>Si tu relies Google Tasks, StudyTrack demande l'accès <code>https://www.googleapis.com/auth/tasks</code> pour lire tes listes et tâches (et les afficher dans ton agenda et tes cours) et pour créer des tâches liées à tes sessions d'étude. Ces données sont traitées <strong>uniquement sur ton téléphone</strong> ; elles ne sont envoyées à aucun serveur de StudyTrack, ni partagées avec qui que ce soit, ni utilisées pour entraîner un modèle d'IA. Tu peux révoquer l'accès à tout moment dans l'app ou sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p class="card">L'utilisation et le transfert à toute autre application des informations reçues des API Google par StudyTrack respectent le <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée (« Limited Use »).</p>
+
+  <h2>Tes droits</h2>
+  <p>Tu peux exporter toutes tes données depuis l'app (Profil › Données), supprimer ton compte StudyTrack et tout ce qu'il a partagé (Profil › Compte), ou supprimer l'app pour tout effacer de ton appareil. Pour toute question : <a href="mailto:hugo.chazarain@gmail.com">hugo.chazarain@gmail.com</a>.</p>
+
+  <hr style="border:none;border-top:1px solid var(--rule);margin:56px 0">
+
+  <section id="en" lang="en">
+  <h1>Privacy Policy</h1>
+  <p class="muted">Last updated: October 2, 2026</p>
+
+  <p>StudyTrack is built to keep your data with you. This page explains exactly what the app reads, where it is stored, and what leaves your phone.</p>
+
+  <h2>What stays on your phone</h2>
+  <p>Your courses, theory items, exercise series and progress, study time, notes and agenda are stored <strong>only on your device</strong> (and in your iCloud backup if enabled). Credentials for your connections are stored in the iOS Keychain.</p>
+
+  <h2>What the app reads</h2>
+  <ul>
+    <li><strong>EPFL Moodle, Courseware, MediaSpace, Explique</strong>: the app reads your course pages inside your own session to extract their structure. Your EPFL password is entered on EPFL's page and never passes through the app.</li>
+    <li><strong>iOS Calendar and Reminders</strong>: only with your permission.</li>
+    <li><strong>Task services</strong> (Google Tasks, Todoist, TickTick, Notion): only if you connect them, to display your tasks and create tasks for your study sessions.</li>
+  </ul>
+
+  <h2>What leaves your phone</h2>
+  <ul>
+    <li><strong>Reading exercise sheets and courses</strong>: the text (and if needed images) of an exercise sheet or a course outline may be sent to our server (Supabase, EU) and forwarded to a language model to structure it. Nothing is kept after the response.</li>
+    <li><strong>Study groups</strong> (optional, with a StudyTrack account): what you choose to share is visible to your group members. Help messages are <strong>end-to-end encrypted</strong>; the server cannot read them.</li>
+    <li><strong>Assistant</strong> (optional, if you enable it): a summary of your courses and progress is stored on our server so your AI assistant (via MCP) can read it. It never includes your tasks or messages.</li>
+    <li><strong>OAuth sign-in</strong> for Todoist, TickTick or Notion: the authorization code passes through our server, which exchanges it for a token and returns it to the app immediately without storing it.</li>
+  </ul>
+  <p>No ads, no trackers, no data sales.</p>
+
+  <h2>Google user data</h2>
+  <p>If you connect Google Tasks, StudyTrack requests the <code>https://www.googleapis.com/auth/tasks</code> scope to read your task lists and tasks (to show them in your agenda and courses) and to create tasks for your study sessions. This data is processed <strong>only on your device</strong>. It is never sent to StudyTrack servers, never shared with third parties, never used for advertising, and never used to train AI or machine-learning models. You can revoke access at any time in the app or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p class="card">StudyTrack's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Your rights</h2>
+  <p>You can export all your data from the app, delete your StudyTrack account and everything it shared, or delete the app to erase everything from your device. Contact: <a href="mailto:hugo.chazarain@gmail.com">hugo.chazarain@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <span>© 2026 StudyTrack</span>
+    <a href="/">Accueil / Home</a>
+    <a href="terms.html">Conditions / Terms</a>
+  </footer>
+</div>
+</body>
+</html>
