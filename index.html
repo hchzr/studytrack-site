@@ -3,56 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StudyTrack — ton semestre EPFL, semaine par semaine</title>
-<meta name="description" content="StudyTrack range ton semestre EPFL semaine par semaine : théorie, séries, échéances et le temps que tu y passes vraiment.">
+<title>StudyTrack</title>
+<meta name="description" content="Une app iPhone pour les étudiant·es de l'EPFL : elle lit tes cours sur Moodle et range ton semestre semaine par semaine.">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="wrap">
-  <header class="site">
-    <img src="icon.png" alt="">
-    <a href="/">StudyTrack</a>
-    <nav><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a></nav>
-  </header>
+<body class="home">
+<header class="bar">
+  <a class="brand" href="/"><img src="icon.png" alt="">StudyTrack</a>
+  <nav><a href="privacy.html">Confidentialité</a></nav>
+</header>
 
-  <h1>Ton semestre EPFL, semaine par semaine.</h1>
-  <p class="lede">StudyTrack lit tes cours sur Moodle et les range pour toi : la théorie à voir, la série à rendre, les échéances, et le temps que tu y passes vraiment.</p>
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Moodle,<br>enfin rangé.</h1>
+      <p class="lede">StudyTrack lit tes cours EPFL sur Moodle et les classe par semaine. Tu ouvres l'app, tu sais quoi faire.</p>
+      <div class="cta">
+        <a class="button" href="mailto:studytrack@hczr.ch?subject=Tester%20StudyTrack">Demander un accès</a>
+        <span class="note">iPhone, gratuit. En test fermé pour l'instant.</span>
+      </div>
+    </div>
+    <figure class="phone hero-phone"><img src="img/today.jpg" alt="L'écran Aujourd'hui : les heures de la semaine, l'horaire, les cours de la semaine 4." width="550" height="1196"></figure>
+  </section>
 
-  <div class="semester" id="semester" aria-hidden="true"></div>
+  <section class="band">
+    <div class="semester" id="semester" aria-hidden="true"></div>
+    <p class="band-caption">Un semestre type. Une ligne par cours, une case par semaine : un point pour la théorie, un carré pour une série.</p>
+  </section>
 
-  <div class="grid">
-    <div class="card"><h3>Tes cours, lus pour toi</h3><p>Une connexion EPFL : vidéos, séries et consignes de chaque semaine arrivent toutes seules, puis se tiennent à jour.</p></div>
-    <div class="card"><h3>Chaque série, question par question</h3><p>L'énoncé imprimé, agrandi d'un toucher. Tu coches chaque sous-question ; le corrigé arrive à sa date.</p></div>
-    <div class="card"><h3>Le temps qui compte</h3><p>Les heures de cours comptent seules, les exercices au chrono, face à la charge prévue par l'EPFL.</p></div>
-    <div class="card"><h3>À plusieurs</h3><p>Vois qui travaille en direct, compare l'avancement série par série, pose une question — chiffrée de bout en bout.</p></div>
-  </div>
+  <section class="feature">
+    <figure class="phone"><img src="img/course.jpg" alt="Le cours Algorithms I : les séries, exercice par exercice." width="550" height="1196" loading="lazy"></figure>
+    <div>
+      <p class="kicker">Import</p>
+      <h2>Tu te connectes une fois.</h2>
+      <p>L'app parcourt chacun de tes cours, ouvre les dossiers, lit les PDF des séries et met chaque vidéo, série et rendu dans sa semaine. Une nouvelle série publiée sur Moodle arrive toute seule.</p>
+      <p>Ton mot de passe se tape sur la page de l'EPFL, pas dans l'app.</p>
+    </div>
+  </section>
 
-  <h2>Tes tâches, là où tu les gardes</h2>
-  <p>StudyTrack se relie à Rappels, Todoist, TickTick, Notion, Things et Google Tasks. Les tâches datées apparaissent dans l'agenda, celles d'un cours dans le cours. Les connexions se font sur la page du service (OAuth) ; StudyTrack ne voit jamais tes mots de passe.</p>
+  <section class="feature flip">
+    <figure class="phone"><img src="img/timer.jpg" alt="Le chrono, sur les séries de CS-250." width="550" height="1196" loading="lazy"></figure>
+    <div>
+      <p class="kicker">Temps d'étude</p>
+      <h2>Des heures qui veulent dire quelque chose.</h2>
+      <p>Les cours magistraux comptent d'eux-mêmes. Une séance d'exercices ne compte que si tu lances le chrono : être assis dans la salle ne suffit pas.</p>
+      <p>Tu compares ensuite avec ce que l'EPFL prévoit pour tes crédits.</p>
+    </div>
+  </section>
 
-  <h2 lang="en">In English</h2>
-  <p lang="en">StudyTrack is an iOS app for EPFL students. It reads your courses on Moodle and organises your semester week by week — theory, exercise series, deadlines — and tracks the time you actually study. It connects to your task app (Apple Reminders, Todoist, TickTick, Notion, Things, Google Tasks) so dated tasks appear in your agenda. Read the <a href="privacy.html#en">privacy policy</a>.</p>
+  <section class="feature">
+    <figure class="phone"><img src="img/agenda.jpg" alt="L'agenda de la semaine 4 : horaire, sessions et délais." width="550" height="1196" loading="lazy"></figure>
+    <div>
+      <p class="kicker">Groupes et to-do</p>
+      <h2>Le reste, si tu veux.</h2>
+      <p>Avec un groupe, tu vois qui travaille en ce moment et où chacun en est dans les séries. Les messages sont chiffrés de bout en bout.</p>
+      <p>Tes to-do (Rappels, Todoist, TickTick, Notion, Things, Google Tasks) apparaissent dans l'agenda, à côté de ton horaire.</p>
+    </div>
+  </section>
 
-  <footer>
-    <span>© 2026 StudyTrack</span>
-    <a href="privacy.html">Confidentialité / Privacy</a>
-    <a href="terms.html">Conditions / Terms</a>
-    <a href="mailto:hugo.chazarain@gmail.com">Contact</a>
-  </footer>
-</div>
+  <section class="privacy-note">
+    <h2>Tes données restent sur ton téléphone.</h2>
+    <p>Pas de compte obligatoire, pas de pub, pas de traceur. Seul ce que tu partages dans un groupe passe par notre serveur. <a href="privacy.html">Le détail</a></p>
+  </section>
+
+  <section class="english" lang="en">
+    <p><strong>In English.</strong> StudyTrack is an iPhone app for EPFL students. It reads your courses on Moodle and sorts lectures, exercise sheets and deadlines by week, and it tracks the time you actually study. Your data stays on your device. <a href="privacy.html#en">Privacy policy</a></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>StudyTrack n'est pas affilié à l'EPFL.</span>
+  <a href="mailto:studytrack@hczr.ch">studytrack@hczr.ch</a>
+  <a href="privacy.html">Confidentialité</a>
+  <a href="terms.html">Conditions</a>
+</footer>
+
 <script>
-  const colors = ["#2E7A8C", "#5B4FB3", "#2F7356", "#A66A2C", "#A33D6B"];
+  // La grille du semestre : elle se remplit en vague, comme pendant l'import.
+  const colors = ["#5B4FB3", "#2E7A8C", "#2F7356", "#A66A2C"];
   const grid = document.getElementById("semester");
-  for (let row = 0; row < 5; row++) {
+  for (let row = 0; row < 4; row++) {
     for (let week = 0; week < 14; week++) {
       const cell = document.createElement("span");
-      if ((row * 7 + week * 3) % 5 !== 0) {
-        cell.style.setProperty("--c", colors[row]);
-        cell.style.setProperty("--d", ((row + week) * 0.06).toFixed(2) + "s");
-        if ((row + week) % 3 === 0) cell.className = "s";
-      }
+      cell.style.setProperty("--c", colors[row]);
+      cell.style.setProperty("--d", (0.3 + week * 0.07 + row * 0.12).toFixed(2) + "s");
+      cell.className = (week === 6 || week === 13) ? "t" : "s";
       grid.appendChild(cell);
     }
   }
