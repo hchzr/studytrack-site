@@ -15,25 +15,30 @@
 <main class="doc">
 
   <h1>Politique de confidentialité</h1>
-  <p class="muted">Dernière mise à jour : 2 octobre 2026</p>
+  <p class="muted">Dernière mise à jour : 26 octobre 2026</p>
 
-  <p>StudyTrack est conçu pour garder tes données chez toi. Cette page dit exactement ce que l'app lit, où elle le garde, et ce qui quitte ton téléphone.</p>
+  <p>StudyTrack est conçu pour garder tes données chez toi. Cette page dit exactement ce que l'app lit, où elle le garde, et ce qui quitte ton iPhone ou ton Mac.</p>
 
-  <h2>Ce qui reste sur ton téléphone</h2>
-  <p>Tes cours, leur théorie, tes séries et leur avancement, ton temps d'étude, tes notes et ton agenda sont stockés <strong>uniquement sur ton appareil</strong> (et dans ta sauvegarde iCloud si tu l'as activée). Les identifiants de tes connexions (Moodle, services de tâches) sont gardés dans le trousseau iOS.</p>
+  <h2>Ce qui reste chez toi</h2>
+  <p>Tes cours, leur théorie, tes séries et leur avancement, ton temps d'étude, tes notes et ton agenda sont stockés <strong>sur tes appareils</strong> et dans ta <strong>base iCloud privée</strong>, qui les synchronise entre ton iPhone, ton iPad et ton Mac. Cette base est chez Apple, dans ton compte : nous n'y avons pas accès. Les identifiants de tes connexions (Moodle, services de tâches) sont gardés dans le trousseau.</p>
 
   <h2>Ce que l'app lit</h2>
   <ul>
     <li><strong>Moodle, Courseware, MediaSpace, Explique (EPFL)</strong> : l'app lit les pages de tes cours dans ta propre session, comme tu le ferais dans un navigateur, pour en extraire la structure (semaines, vidéos, séries, échéances). Ton mot de passe EPFL est saisi sur la page de l'EPFL et ne passe jamais par l'app.</li>
     <li><strong>Calendrier et Rappels d'iOS</strong> : seulement si tu l'autorises, pour afficher ton horaire et tes tâches et y ajouter tes sessions.</li>
     <li><strong>Services de tâches</strong> (Google Tasks, Todoist, TickTick, Notion) : seulement si tu les relies, pour afficher tes tâches et en créer pour tes sessions d'étude.</li>
+    <li><strong>Ed Discussion</strong> : les fils de tes cours, dans ta session, pour te signaler les nouveaux pendant le mode étude.</li>
+    <li><strong>Appareil photo, Musique, Anki</strong> : l'appareil photo seulement pour numériser ta copie ; ta bibliothèque musicale pour jouer une playlist pendant le mode étude ; Anki (AnkiConnect, sur ton ordinateur) seulement si tu y envoies des cartes. Rien de cela ne passe par nos serveurs.</li>
   </ul>
 
-  <h2>Ce qui quitte ton téléphone</h2>
+  <h2>Ce qui quitte ton appareil</h2>
   <ul>
-    <li><strong>Lecture des séries et des cours</strong> : le texte (et, si nécessaire, les images) d'une série d'exercices ou le plan d'un cours peut être envoyé à notre serveur (Supabase, Union européenne) qui le transmet à un modèle de langue pour le ranger. Rien n'est conservé après la réponse.</li>
-    <li><strong>Groupes</strong> (facultatif, avec un compte StudyTrack) : ce que tu choisis de partager — temps d'étude agrégé par jour, avancement des séries, présence « je travaille sur… » — est visible par les membres de tes groupes. Les messages d'entraide sont <strong>chiffrés de bout en bout</strong> : le serveur ne peut pas les lire.</li>
-    <li><strong>Assistant</strong> (facultatif, si tu l'actives) : un résumé de tes cours et de ton avancement est déposé sur notre serveur pour que ton assistant IA (via MCP) puisse le lire. Il ne contient ni tes tâches ni tes messages.</li>
+    <li><strong>Lecture des séries et des cours</strong> : le texte (et, si nécessaire, les images des pages) d'une série d'exercices ou le plan d'un cours peut être envoyé à notre serveur (Supabase, Union européenne) qui le transmet à un modèle de langue (OpenAI ou Google, par OpenRouter ; Groq en secours) pour le ranger. Le contenu n'est pas conservé après la réponse ; seuls le nombre de jetons, le coût et la durée de l'appel sont notés. Pour limiter les abus, l'adresse IP et un identifiant d'installation tiré au hasard (qui ne te désigne pas) sont comptés pendant au plus deux jours.</li>
+    <li><strong>Chrono partagé entre tes appareils</strong> : l'état du chrono, et les photos de ta copie envoyées de l'iPhone au Mac, passent par notre relais (Cloudflare), <strong>chiffrés</strong> avec une clé tirée de ton compte iCloud ; le relais ne peut pas les lire et ne garde que le dernier état du chrono. Pour mettre à jour l'écran verrouillé, l'heure du chrono et son libellé passent par le service de notifications d'Apple.</li>
+    <li><strong>Groupes</strong> (facultatif, avec un compte StudyTrack) : ce que tu choisis de partager — temps d'étude agrégé par jour, avancement des séries, présence « je travaille sur… » — est visible par les membres de tes groupes. Les messages d'entraide sont <strong>chiffrés de bout en bout</strong> : le serveur ne peut pas les lire. Pendant une session de groupe, l'horloge commune (marche, pauses) passe par notre serveur ; ton cours et ton exercice restent sur ton appareil.</li>
+    <li><strong>Assistant</strong> (facultatif, si tu l'actives) : un résumé de tes cours et de ton avancement est déposé sur notre serveur pour que ton assistant IA (via MCP) puisse le lire. Avec « Fichiers et notes », il contient aussi tes notes de cours, ta fiche de révision, tes corrigés rédigés et les PDF déjà téléchargés sur ton appareil (en Wi-Fi seulement), dans un espace privé effacé quand tu coupes le réglage ou te déconnectes. Il ne contient ni tes to-do ni tes messages.</li>
+    <li><strong>Claude et NotebookLM sur le Mac</strong> (facultatifs) : le tuteur utilise <strong>ton propre</strong> Claude (Claude Code, connecté à ton compte Anthropic) ; l'énoncé, ta question et les pages de copie que tu joins lui sont envoyés sous ton compte. NotebookLM utilise ton compte Google : les sources que tu exportes y sont déposées. StudyTrack n'en garde rien.</li>
+    <li><strong>« Signaler un problème »</strong> : prépare un courriel vers nous avec la version de l'app et la fin de son journal ; rien ne part tant que tu ne l'envoies pas.</li>
     <li><strong>Connexion OAuth</strong> à Todoist, TickTick ou Notion : le code d'autorisation transite par notre serveur, qui l'échange contre un jeton et le renvoie immédiatement à l'app, sans le conserver.</li>
   </ul>
   <p>Aucune publicité, aucun traceur, aucune revente de données.</p>
@@ -49,25 +54,30 @@
 
   <section id="en" lang="en">
   <h1>Privacy Policy</h1>
-  <p class="muted">Last updated: October 2, 2026</p>
+  <p class="muted">Last updated: October 26, 2026</p>
 
-  <p>StudyTrack is built to keep your data with you. This page explains exactly what the app reads, where it is stored, and what leaves your phone.</p>
+  <p>StudyTrack is built to keep your data with you. This page explains exactly what the app reads, where it is stored, and what leaves your iPhone or Mac.</p>
 
-  <h2>What stays on your phone</h2>
-  <p>Your courses, theory items, exercise series and progress, study time, notes and agenda are stored <strong>only on your device</strong> (and in your iCloud backup if enabled). Credentials for your connections are stored in the iOS Keychain.</p>
+  <h2>What stays with you</h2>
+  <p>Your courses, theory items, exercise series and progress, study time, notes and agenda are stored <strong>on your devices</strong> and in your <strong>private iCloud database</strong>, which syncs them between your iPhone, iPad and Mac. That database is held by Apple in your account: we cannot access it. Credentials for your connections are stored in the Keychain.</p>
 
   <h2>What the app reads</h2>
   <ul>
     <li><strong>EPFL Moodle, Courseware, MediaSpace, Explique</strong>: the app reads your course pages inside your own session to extract their structure. Your EPFL password is entered on EPFL's page and never passes through the app.</li>
     <li><strong>iOS Calendar and Reminders</strong>: only with your permission.</li>
     <li><strong>Task services</strong> (Google Tasks, Todoist, TickTick, Notion): only if you connect them, to display your tasks and create tasks for your study sessions.</li>
+    <li><strong>Ed Discussion</strong>: your courses' threads, inside your session, to flag new ones during study mode.</li>
+    <li><strong>Camera, Music, Anki</strong>: the camera only to scan your written work; your music library to play a playlist during study mode; Anki (AnkiConnect, on your computer) only if you send cards to it. None of this goes through our servers.</li>
   </ul>
 
-  <h2>What leaves your phone</h2>
+  <h2>What leaves your device</h2>
   <ul>
-    <li><strong>Reading exercise sheets and courses</strong>: the text (and if needed images) of an exercise sheet or a course outline may be sent to our server (Supabase, EU) and forwarded to a language model to structure it. Nothing is kept after the response.</li>
-    <li><strong>Study groups</strong> (optional, with a StudyTrack account): what you choose to share is visible to your group members. Help messages are <strong>end-to-end encrypted</strong>; the server cannot read them.</li>
-    <li><strong>Assistant</strong> (optional, if you enable it): a summary of your courses and progress is stored on our server so your AI assistant (via MCP) can read it. It never includes your tasks or messages.</li>
+    <li><strong>Reading exercise sheets and courses</strong>: the text (and if needed page images) of an exercise sheet or a course outline may be sent to our server (Supabase, EU) and forwarded to a language model (OpenAI or Google via OpenRouter, Groq as a fallback) to structure it. The content is not kept after the response; only the token count, cost and duration of the call are recorded. To limit abuse, the IP address and a random install identifier (which does not identify you) are counted for at most two days.</li>
+    <li><strong>Timer shared between your devices</strong>: the timer state, and photos of your work sent from iPhone to Mac, pass through our relay (Cloudflare), <strong>encrypted</strong> with a key derived from your iCloud account; the relay cannot read them and keeps only the latest timer state. To update the lock screen, the timer's times and label pass through Apple's push notification service.</li>
+    <li><strong>Study groups</strong> (optional, with a StudyTrack account): what you choose to share is visible to your group members. Help messages are <strong>end-to-end encrypted</strong>; the server cannot read them. During a group session, the shared clock (running, paused) passes through our server; your course and exercise stay on your device.</li>
+    <li><strong>Assistant</strong> (optional, if you enable it): a summary of your courses and progress is stored on our server so your AI assistant (via MCP) can read it. With “Files and notes”, it also includes your course notes, revision sheet, written solutions and the PDFs already downloaded on your device (Wi-Fi only), in a private space erased when you turn the setting off or sign out. It never includes your to-dos or messages.</li>
+    <li><strong>Claude and NotebookLM on the Mac</strong> (optional): the tutor uses <strong>your own</strong> Claude (Claude Code, signed in to your Anthropic account); the exercise, your question and any pages you attach are sent to it under your account. NotebookLM uses your Google account: the sources you export are uploaded there. StudyTrack keeps none of it.</li>
+    <li><strong>“Report a problem”</strong>: prepares an email to us with the app version and the end of its log; nothing is sent until you send it.</li>
     <li><strong>OAuth sign-in</strong> for Todoist, TickTick or Notion: the authorization code passes through our server, which exchanges it for a token and returns it to the app immediately without storing it.</li>
   </ul>
   <p>No ads, no trackers, no data sales.</p>
